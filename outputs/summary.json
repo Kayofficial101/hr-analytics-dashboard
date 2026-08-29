@@ -1,0 +1,25 @@
+{
+  "data_type": "synthetic",
+  "seed": 20250830,
+  "employees": 1470,
+  "overall_attrition_rate": 0.144218,
+  "overtime_attrition_rates": {
+    "No": 0.10622,
+    "Yes": 0.237647
+  },
+  "department_attrition_rates": {
+    "Human Resources": 0.12987,
+    "Research & Development": 0.144374,
+    "Sales": 0.146341
+  },
+  "role_attrition_rates": {
+    "Human Resources": 0.125,
+    "Laboratory Technician": 0.145215,
+    "Manager": 0.133333,
+    "Research Director": 0.161905,
+    "Research Scientist": 0.126543,
+    "Sales Executive": 0.091324,
+    "Sales Representative": 0.198276
+  },
+  "under_2_year_share_of_attrition": 0.061321
+}
