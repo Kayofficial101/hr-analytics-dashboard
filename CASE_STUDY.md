@@ -1,19 +1,14 @@
-# Case study: where should HR investigate attrition first?
+# Attrition case notes
 
-## Findings
+## Readout
 
-- Overall attrition is **14.4%** in the synthetic 1,470-employee dataset.
-- Employees working overtime show **23.8%** attrition, versus **10.6%** for employees without overtime.
-- Sales Representatives have the highest role-level attrition rate at **19.8%** among the generated roles.
-- Department-level rates are close together, so department alone is a weak prioritization signal in this dataset.
+Attrition is **14.4%** overall. Employees working overtime are at **23.8%**, compared with **10.6%** for everyone else. Sales Representatives have the highest role-level rate at **19.8%**. Department rates sit close together, which makes department a weak starting point.
 
-## Recommendations
+## Proposed work
 
-- Review overtime frequency and staffing capacity before assuming the relationship is individual performance-related.
-- Prioritize structured stay interviews for new employees who are regularly working overtime.
-- Investigate role design and manager practices for Sales Representatives.
-- Track any intervention with a comparison group; the analysis identifies associations, not causes.
+- Review overtime frequency, open roles and staffing capacity by team.
+- Run structured stay interviews with newer employees who work overtime regularly.
+- Break the Sales Representative result down by manager, tenure and performance band.
+- Track each intervention with a comparison group.
 
-## Limitation
-
-The data is synthetic and deliberately encodes several risk relationships. It shows an analysis and decision workflow, not evidence about a real employer.
+The current analysis shows associations. Manager history, pay position, absence, hiring cohort and intervention results would be needed for a stronger diagnosis.

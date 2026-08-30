@@ -1,39 +1,29 @@
-# HR Analytics: Employee Attrition Dashboard
+# HR attrition analysis
 
-This **Python + SQL** case looks at where HR should investigate attrition first. It uses 1,470 synthetic employee records and includes a compact dashboard, source data, query layer and written recommendations.
+This Python and SQL project looks at where an HR team should investigate attrition first.
 
-> Data note: every employee record is synthetic. No employer or employee data is used.
+> Data note: the 1,470 employee records are generated for this project.
 
 ![HR attrition dashboard](visuals/dashboard.svg)
 
-## Start here
+## Findings
 
-- [Read the case study](CASE_STUDY.md)
-- [Review the generator and analysis](scripts/generate_and_analyze.py)
-- [Inspect the SQL](sql/attrition_queries.sql)
-- [Open the source data](data/hr_attrition.csv)
+- Overall attrition: **14.4%**
+- Attrition with overtime: **23.8%**, compared with **10.6%** without overtime
+- Sales Representative attrition: **19.8%**, the highest role-level rate in the data
+- Department rates are close, so a department-wide response would be poorly targeted
 
-## Headline findings
+The useful follow-up is narrower: review overtime frequency and staffing capacity, speak with newer employees who work overtime, and inspect role and manager patterns among Sales Representatives.
 
-- **14.4%** overall attrition
-- **23.8%** attrition with overtime versus **10.6%** without overtime
-- **19.8%** attrition among Sales Representatives, the highest generated role-level rate
-- Department rates remain close, which suggests investigating role and workload before broad department-level action
+## Files
 
-## Repository map
+- [Case notes](CASE_STUDY.md)
+- [Python analysis](scripts/generate_and_analyze.py)
+- [SQL queries](sql/attrition_queries.sql)
+- [Source records](data/hr_attrition.csv)
 
-| Path | Purpose |
-|---|---|
-| `data/hr_attrition.csv` | 1,470-row source dataset |
-| `scripts/generate_and_analyze.py` | Deterministic data generation, analysis and SVG dashboard |
-| `outputs/summary.json` | Machine-readable KPI reconciliation |
-| `sql/attrition_queries.sql` | Segmentation, risk queue and QA queries |
-| `CASE_STUDY.md` | Findings, recommendations and limitations |
-
-## Reproduce
+## Rebuild
 
 ```bash
 python scripts/generate_and_analyze.py
 ```
-
-The script uses only Python's standard library and a fixed seed.

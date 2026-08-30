@@ -1,5 +1,5 @@
 {
-  "data_type": "synthetic",
+  "data_type": "generated",
   "seed": 20250830,
   "employees": 1470,
   "overall_attrition_rate": 0.144218,

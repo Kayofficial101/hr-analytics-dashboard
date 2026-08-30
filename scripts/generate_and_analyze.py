@@ -1,4 +1,4 @@
-"""Generate and analyze a deterministic synthetic HR attrition dataset."""
+"""Generate and analyze a fixed HR attrition practice dataset."""
 
 from __future__ import annotations
 
@@ -78,7 +78,7 @@ def summarize(rows: list[dict[str, object]]) -> dict[str, object]:
         by_role[str(row["job_role"])].append(row)
     attrited = [row for row in rows if row["attrition"] == "Yes"]
     return {
-        "data_type": "synthetic",
+        "data_type": "generated",
         "seed": SEED,
         "employees": len(rows),
         "overall_attrition_rate": round(attrition_rate(rows), 6),
@@ -98,7 +98,7 @@ def write_dashboard(summary: dict[str, object]) -> None:
         '<rect width="1100" height="610" fill="#F5F7FA"/>',
         '<rect x="0" y="0" width="1100" height="92" fill="#11233F"/>',
         '<text x="55" y="57" font-family="Arial" font-size="30" font-weight="700" fill="#FFFFFF">HR Attrition Dashboard</text>',
-        '<text x="55" y="125" font-family="Arial" font-size="15" fill="#5B6577">Synthetic dataset | 1,470 employees</text>',
+        '<text x="55" y="125" font-family="Arial" font-size="15" fill="#5B6577">1,470 employees | fixed practice dataset</text>',
         '<rect x="55" y="155" width="300" height="120" rx="8" fill="#E7F4F2" stroke="#0F766E"/>',
         '<text x="78" y="193" font-family="Arial" font-size="17" font-weight="700" fill="#0F766E">Overall attrition</text>',
         f'<text x="78" y="246" font-family="Arial" font-size="42" font-weight="700" fill="#172033">{overall:.1%}</text>',
