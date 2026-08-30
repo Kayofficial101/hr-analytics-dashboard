@@ -1,6 +1,6 @@
 # HR Analytics: Employee Attrition Dashboard
 
-A reproducible **Python + SQL** case study using 1,470 deterministic synthetic employee records. It includes a compact dashboard, source data, query layer and a written interpretation with explicit limitations.
+This **Python + SQL** case looks at where HR should investigate attrition first. It uses 1,470 synthetic employee records and includes a compact dashboard, source data, query layer and written recommendations.
 
 > Data note: every employee record is synthetic. No employer or employee data is used.
 

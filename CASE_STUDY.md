@@ -16,4 +16,4 @@
 
 ## Limitation
 
-The data is synthetic and deliberately encodes several risk relationships. It is a portfolio demonstration of an analysis and decision workflow, not evidence about a real employer.
+The data is synthetic and deliberately encodes several risk relationships. It shows an analysis and decision workflow, not evidence about a real employer.
