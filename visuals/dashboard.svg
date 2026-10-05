@@ -16,7 +16,7 @@
 <text x="55" y="395" font-family="Arial" font-size="16" fill="#172033">Human Resources</text>
 <rect x="285" y="370" width="337.7" height="34" rx="4" fill="#0F766E"/>
 <text x="637.7" y="394" font-family="Arial" font-size="16" font-weight="700" fill="#172033">13.0%</text>
-<text x="55" y="461" font-family="Arial" font-size="16" fill="#172033">Research & Development</text>
+<text x="55" y="461" font-family="Arial" font-size="16" fill="#172033">Research &amp; Development</text>
 <rect x="285" y="436" width="375.4" height="34" rx="4" fill="#0F766E"/>
 <text x="675.4" y="460" font-family="Arial" font-size="16" font-weight="700" fill="#172033">14.4%</text>
 <text x="55" y="527" font-family="Arial" font-size="16" fill="#172033">Sales</text>

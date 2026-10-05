@@ -6,6 +6,7 @@ import csv
 import json
 import random
 from collections import defaultdict
+from html import escape
 from pathlib import Path
 
 
@@ -116,7 +117,7 @@ def write_dashboard(summary: dict[str, object]) -> None:
         y = 370 + index * 66
         width = value * 2600
         parts.extend([
-            f'<text x="55" y="{y + 25}" font-family="Arial" font-size="16" fill="#172033">{label}</text>',
+            f'<text x="55" y="{y + 25}" font-family="Arial" font-size="16" fill="#172033">{escape(label)}</text>',
             f'<rect x="285" y="{y}" width="{width:.1f}" height="34" rx="4" fill="#0F766E"/>',
             f'<text x="{300 + width:.1f}" y="{y + 24}" font-family="Arial" font-size="16" font-weight="700" fill="#172033">{value:.1%}</text>',
         ])
